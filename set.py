@@ -8,4 +8,20 @@ import re
 #   https://github.com/kds1024/set.git
 #-----------------------------------------------------------------------------
 
+allSet = {'1', '2', '3'}
+onSet = set()
+
+print('allSet->' + str(allSet))
+print('onSet->' + str(onSet))
+
+# ONのものを追加
+onSet.add('1')
+onSet.add('2')
+print('onSet->' + str(onSet))
+
+# allSetと差を取る
+offSet = allSet - onSet
+
+# allSetからonSetの差を取るとoffの集合が取れる
+print('offSet->' + str(offSet))
 
